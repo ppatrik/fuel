@@ -11,9 +11,9 @@
         "fuel/auth": "1.8.*",
         "fuel/email": "1.8.*",
         "fuel/oil": "1.8.*",
-        "fuel/orm": "1.8.*",
         "fuel/parser": "1.8.*",
-        "fuelphp/upload": "2.0.6"
+        "fuelphp/upload": "2.0.6",
+        "propel/propel": "2.0.0-alpha7"
     },
     "require-dev": {
         "fuel/docs": "1.8.*"
@@ -37,7 +37,21 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php oil r install"
+            "php oil r install",
+            "propel config:convert"
+        ],
+        "propel-model-build": [
+            "propel model:build",
+            "@composer dump-autoload"
+        ],
+        "propel-migration-up": [
+            "propel migration:up"
+        ],
+        "propel-migration-down": [
+            "propel migration:down"
+        ],
+        "propel-diff": [
+            "propel migration:diff"
         ]
     },
     "minimum-stability": "stable"

@@ -22,3 +22,6 @@ require COREPATH.'bootstrap.php';
 
 // Initialize the framework with the config file.
 \Fuel::init('config.php');
+
+// Initialize the orm framework with it's config file.
+require APPPATH . 'propel/config.php';

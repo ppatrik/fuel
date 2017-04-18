@@ -12,5 +12,15 @@ return array(
 			'username'   => 'fuel_app',
 			'password'   => 'super_secret_password',
 		),
+        'propelConnection' => array(
+            'adapter' => 'mysql',
+            'classname' => 'Propel\Runtime\Connection\ProfilerConnectionWrapper',
+            'dsn' => 'mysql:host=localhost;dbname=fuel_test',
+            'user' => 'fuel_app',
+            'password' => 'super_secret_password',
+            'settings' => array(
+                'charset' => 'utf8'
+            )
+        ),
 	),
 );

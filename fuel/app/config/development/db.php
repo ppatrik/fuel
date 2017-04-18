@@ -10,5 +10,15 @@ return array(
 			'username'   => 'root',
 			'password'   => 'root',
 		),
+        'propelConnection' => array(
+            'adapter' => 'mysql',
+            'classname' => 'Propel\Runtime\Connection\ProfilerConnectionWrapper',
+            'dsn' => 'mysql:host=localhost;dbname=fuel_dev',
+            'user' => 'root',
+            'password' => 'root',
+            'settings' => array(
+                'charset' => 'utf8'
+            )
+        ),
 	),
 );

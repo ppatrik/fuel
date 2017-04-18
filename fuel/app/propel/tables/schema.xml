@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<database
+        name="default"
+        defaultIdMethod="native"
+        defaultPhpNamingMethod="underscore"
+        namespace="models"
+        identifierQuoting="true"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/2.0/database.xsd">
+
+
+
+</database>
