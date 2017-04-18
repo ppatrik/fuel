@@ -26,6 +26,9 @@
         "pyrocms/lex": "Allow Lex templating with the Parser package",
         "mthaml/mthaml": "Allow Haml templating with Twig supports with the Parser package"
     },
+    "autoload": {
+        "classmap": ["fuel/app/propel/classes/"]
+    },
     "config": {
         "vendor-dir": "fuel/vendor"
     },
